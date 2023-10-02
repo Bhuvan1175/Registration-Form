@@ -1,0 +1,103 @@
+body {
+    background-image: url("image.jpg");
+    /*background: linear-gradient(to right,#74ebcd,#dee69f  );*/
+    font-family: 'Mulish', sans-serif;
+     
+    background-size: 100%;
+    background-repeat:no-repeat;
+    font-family:var(Mulish);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+     
+    width: 100vw;
+
+}
+
+#form {
+    width: 100%;
+    margin: 13vh;
+    padding: 40px;
+    background-color:#f0f0f0;
+    border-radius: 8px;
+    width:calc(100vw - 65vw);
+    font-size: 18px;
+    
+}
+ 
+#form h1 {
+    color:black;
+    background:linear-gradient(to left,rgba(116,235,213,0.6),rgba(159,172,230,0.6));
+     
+    padding: 20px;
+    font-family:var(Mulish);
+    font-size:18px;
+    font-style:unset;
+    font-weight:bold;
+    text-transform: uppercase;
+    text-align:center;
+    
+}
+
+#form button {
+    background: var(to left,#74ebcd,#dee69f);
+    border-radius:6px;
+    border: none;
+    outline: none;
+    color:darkslategray;
+    display: block;
+    font-family:var(Mulish);
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top:20px;
+    width:100%;
+    font-weight:bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+#form button:hover {
+    background:linear-gradient(to right,#74ebd5,#9face6);
+
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.input-control input {
+    width: 100%;
+    border: 2px solid #056559;
+    border-radius: 5px;
+    display: block;
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding:12px
+     
+}
+
+.input-control input:focus {
+    outline: 0;
+    border-color:#9face6;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 10px;
+    height: 13px;
+}
